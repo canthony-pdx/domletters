@@ -2,6 +2,7 @@
 
 import sys
 
+#finds the dominant letter in a word and returns the count
 def letter_count(word):
     dom_count = 0
     for letter in word:
@@ -14,7 +15,6 @@ def main():
     dom_count = 0
     for line in sys.stdin:
         wordlist = line.split()
-
         for word in wordlist:
             if word.isalpha() == False:
                 continue
@@ -24,4 +24,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
